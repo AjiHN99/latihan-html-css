@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white
+}
+
+
+.card-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 25px auto;
+    gap: 2rem;
+    width: 900px;
+    height: 500px;
+    background-color: #facf23;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.card-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.card-container h2 {
+    margin-bottom: 10px;
+}
+
+.button button {
+    width: 50px;
+    background-color: lightsalmon;
+    color: white;
+}

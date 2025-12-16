@@ -1,0 +1,31 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    border: 2px solid black;
+    width: 500px;
+    margin: 20px auto;
+    padding: 1px;
+}
+
+/* multicolummn  */
+.satu {
+    width: 50px;
+    height: 400px;
+    background-color: red;
+    float: left;
+}
+.dua {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    float: left;
+}
+
+.tiga {
+    width: 50px;
+    height: 400px;
+    background-color: green;
+    float: left;
+}
