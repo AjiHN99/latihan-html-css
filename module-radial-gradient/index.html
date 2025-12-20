@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <>
+      body {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        background-attachment: fixed;
+        /* Warna tengah ke pinggir: Biru -> Kuning -> Oranye */
+        /* background-image: radial-gradient(circle, #5A9CB5, #FACE68, #FAAC68); */
+
+        /* bisa menggeser pusat warna nya: warna biru berada di kiri atas */
+        /* background-image: radial-gradient(at top left, #5A9CB5, #FACE68, #FAAC68); */
+
+        /* bisa pakai bentuk dan penempatannya*/
+        /* background-image: radial-gradient(circle at bottom,rgb(250, 129, 47)20%,rgb(255, 178, 44),rgb(243, 198, 35), rgb(254, 243, 226)); */
+
+        /* pakai color stop & seberapa jauh warna menyebar, warna awal : red, warna akhir: blue */
+        background-image: radial-gradient(farthest-corner, white 50%, blue 60%);
+
+        /* CONTOH A: Gradient terlihat bulat kecil di tengah */
+        /* background-image: radial-gradient(closest-side, white, blue); */
+
+        /* CONTOH B: Gradient menyebar halus sampai ke seluruh pojok */
+        /* background-image: radial-gradient(farthest-corner, white, blue); */
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ini warna radian gradient</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
+      pariatur.
+    </p>
+  </body>
+</html>
