@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 1</title>
+    <style>
+        /* transition
+        [property] <durasi> [fungsi] [delay] */
+        body{
+            padding: 0;
+            margin: 0;
+
+        }
+        .container1{
+            width: 900px;
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+        .container2{
+            width: 900px;
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+        .kotak1{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            transition: all 1s ease-in;
+        }
+
+        .kotak2{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            transition: all 1s ease-out;
+        }
+
+        .container1:hover .kotak1 {
+            transform: rotate(360deg);
+            margin-left: 800px;
+            background-color: royalblue;
+        }
+        .container2:hover .kotak2 {
+            transform: rotate(360deg);
+            margin-left: 800px;
+            background-color: royalblue;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="kotak1">ease-in</div>
+    </div>
+
+    <div class="container2">
+        <div class="kotak2">ease-out</div>
+    </div>
+    
+</body>
+</html>

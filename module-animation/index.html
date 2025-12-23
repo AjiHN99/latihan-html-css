@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Animation</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: blanchedalmond ;
+            cursor: pointer;
+        }
+        .kotak:hover{
+            animation-name: myAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+            
+
+        }
+        
+        @keyframes myAnimation{
+            0% {background-color: red; width: 200px;}
+            40% {background-color: green; height:200px; margin-left:200px;}
+            70% {background-color: blue; width: 400px; }
+            100% {background-color: white; height: 900px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>
